@@ -3,6 +3,7 @@ using namespace std;
 // PROJECTS_1
 
 
+
 int main() {
   cout << "Programma pieprasa figūras elementus un aprēķina to laukumu. \n";
   cout << " Nospiediet burtu:\n";
