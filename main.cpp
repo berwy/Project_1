@@ -1,17 +1,35 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 // PROJECTS_1
 
-void Trapeze();
-    {
-    cout << "lai uzzināt Tr laukumu uzraksti augstumu un pamatu" << endl ;
-    int h,a;
-    cin >> h ;
-    cin >> a ;
-    int STr=a*h;
-    cout << "Trapecijas laukums = " <<STr ;
-    }
+int S_Triangle_angle()  
 
+{
+ int a, b, y, S;
+  cout << "Trijstūra pamats ir ";
+  cin >> a;
+  cout << "Trijstūra sānu mala ir ";
+  cin >> b;
+  cout << "Trijstura leņķa vērtība ir ";
+  cin >> y;
+  S=a*b*sin(y)/2;
+  return S;
+}
+
+void  pri(int S) 
+{
+  cout << "Trijstūra laukums ir " << S << endl;
+}
+
+int main() 
+{
+  int S;
+  S=S_Triangle_angle();    
+  pri(S);       
+  
+  
+  
 int main() {
   cout << "Programma pieprasa figūras elementus un aprēķina to laukumu. \n";
   cout << " Nospiediet burtu:\n";
@@ -39,7 +57,15 @@ int main() {
 
   if (user_answer=="Tr"|| user_answer=="tr")
   {
-    Trapeze();
+    int Trapeze();
+    {
+    cout << "lai uzzināt Tr laukumu uzraksti augstumu un pamati" << endl ;
+    int h,a;
+    cin >> h ;
+    cin >> a ;
+    int STr=a*h;
+    cout << STr ;
+    return STr;}
   }
 
   if (user_answer=="R"|| user_answer=="r")
