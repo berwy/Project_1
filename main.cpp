@@ -3,7 +3,6 @@ using namespace std;
 // PROJECTS_1
 
 
-
 int main() {
   cout << "Programma pieprasa figūras elementus un aprēķina to laukumu. \n";
   cout << " Nospiediet burtu:\n";
@@ -31,7 +30,15 @@ int main() {
 
   if (user_answer=="Tr"|| user_answer=="tr")
   {
-    Trapeze();
+    int Trapeze();
+    {
+    cout << "lai uzzināt Tr laukumu uzraksti augstumu un pamati" << endl ;
+    int h,a;
+    cin >> h ;
+    cin >> a ;
+    int STr=a*h;
+    cout << STr ;
+    return STr;}
   }
 
   if (user_answer=="R"|| user_answer=="r")
